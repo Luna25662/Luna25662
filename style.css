@@ -25,7 +25,7 @@ background-position: center;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 15%;
+margin-top: 20%;
   width: 380px;
   height: 210px;
   border: 5px;
@@ -50,11 +50,14 @@ margin-top: 15%;
   display: flex;            /* Enables Flexbox */
   justify-content: center;   /* Centers buttons horizontally */
   gap: 20px;                /* Adds consistent space between buttons */
-  margin-top: 20px;         /* Adds space above the button row */
+  margin-bottom: 20px;         /* Adds space above the button row */
   width: 100%;              /* Ensures it spans the full width */
   border-radius: 5px;
   border-color: rgb(230, 212, 107);
  background-color: mediumpurple;
+bottom: 0;
+ position: fixed;
+ z-index: 402;
 }
 
 .bottom-rectangle {
@@ -71,7 +74,7 @@ margin-top: 15%;
   padding: 10px;
   border-style: solid;
 
-  z-index: 1000; /* Ensures it stays on top of other content */
+  z-index: 400; /* Ensures it stays on top of other content */
 }
 #TeamLogo {
 height: 50px;
@@ -82,7 +85,7 @@ width: 50px;
   position: fixed;
   bottom: 0;
   right: 0;
-z-index: 1001;
+z-index: 410;
 }
 
 .top-rectangle {
@@ -97,12 +100,51 @@ z-index: 1001;
   color: white;
   text-align: center;
   padding: 10px;
-  z-index: 1000; /* Ensures it stays on top of other content */
+  z-index: 399; /* Ensures it stays on top of other content */
 border: 3px;
 border-color: yellow;
 border-style: solid;
+z-index: 300;
+}
+.contacts{
+height: 100px;
+width: 100%;
+border-style: outset;
+  background-color: rgb(230, 212, 107);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: mediumpurple; /* Change color as needed */
+  color: yellow;
+  text-align: center;
+  padding: 10px;
+  border-style: solid;
+
+  z-index: 200; /* Ensures it stays on top of other content */
+
+
 }
 
+.contactButtons{
+  display: flex;            /* Enables Flexbox */
+  justify-content: center;   /* Centers buttons horizontally */
+  gap: 20px;                /* Adds consistent space between buttons */
+  margin-bottom: 20px;         /* Adds space above the button row */
+  width: 100%; 
+  border-radius: 50px;
+  bottom: 20%;             /* Ensures it spans the full width */
+  border-color: rgb(230, 212, 107);
+ background-color: mediumpurple;
+ z-index: 210;
 
+}
+
+#imageicon{
+  border-radius: 50px;
+}
+
+#contbut{
+  border-radius: 60px;
+}
 
 
